@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Petra Browser (Web)</title>
+  <title>Petra Browser (Shared)</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div id="topbar">
-    <button id="btn_back" class="btn small">&lt; Wstecz</button>
+    <button id="btn_back" class="btn small">← Home</button>
     <div id="title">* PETRA BROWSER *</div>
     <div class="right">
+      <span id="user_info"></span>
       <button id="btn_projects" class="btn small">Projekty</button>
       <button id="btn_add" class="btn accent">+ Dodaj stronę</button>
     </div>
@@ -18,11 +19,11 @@
 
   <div id="main"></div>
 
+  <!-- Templates -->
   <template id="home-template">
     <div class="home-wrap">
       <h1>PETRA BROWSER</h1>
       <p class="hint">wpisz nazwę strony i naciśnij Enter</p>
-
       <div class="search-outer">
         <div class="search-inner">
           <input id="search_input" placeholder="Szukaj..." />
@@ -30,7 +31,6 @@
         </div>
         <div id="suggestions" class="suggestions"></div>
       </div>
-
       <div class="bot-row">
         <button id="open_bot" class="btn">Petra bot</button>
         <small>Petra bot twój niezawodny asystent</small>
@@ -40,7 +40,7 @@
 
   <template id="projects-template">
     <div class="projects-wrap">
-      <h2>Twoje Projekty</h2>
+      <h2>Wszystkie Projekty</h2>
       <div id="projects_grid" class="grid"></div>
     </div>
   </template>
@@ -50,6 +50,7 @@
       <h2 id="page_title"></h2>
       <div id="page_image"></div>
       <div id="page_content" class="page-content"></div>
+      <div id="page_meta" class="page-meta"></div>
     </div>
   </template>
 
@@ -82,6 +83,7 @@
     </div>
   </template>
 
-  <script src="app.js"></script>
+  <!-- Firebase SDK -->
+  <script type="module" src="app.js"></script>
 </body>
 </html>
