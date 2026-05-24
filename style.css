@@ -1,0 +1,35 @@
+:root{
+  --bg:#0d0d0d; --bg2:#141414; --bg3:#1c1c1c;
+  --accent:#c8a96e; --accent2:#e8c98e;
+  --fg:#f0ece0; --fg2:#9a9080; --border:#2a2a2a;
+  --danger:#c0392b; --success:#27ae60;
+  font-family: "Courier New", monospace;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--fg)}
+#topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--bg2);height:54px}
+#title{color:var(--accent);font-family:Georgia;font-weight:700}
+.btn{background:var(--bg3);color:var(--fg2);border:0;padding:8px 10px;cursor:pointer;border-radius:4px}
+.btn.small{padding:6px 8px}
+.btn.accent{background:var(--accent);color:#0d0d0d;font-weight:700}
+#main{padding:24px}
+.home-wrap{text-align:center;margin-top:40px}
+.search-outer{display:inline-block;margin-top:12px}
+.search-inner{display:flex;background:var(--bg3);padding:6px;border-radius:6px}
+.search-inner input{background:transparent;border:0;color:var(--fg);padding:8px;width:320px;outline:none}
+.suggestions{margin-top:6px;text-align:left}
+.suggestions button{display:block;width:100%;text-align:left;padding:8px;background:var(--bg3);border:0;color:var(--accent);cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:18px}
+.card{background:var(--bg2);padding:12px;border:1px solid var(--border);border-radius:6px}
+.card img{max-width:100%;height:auto;border-radius:4px}
+.page-wrap{max-width:900px;margin:0 auto;background:transparent}
+.page-content{background:transparent;padding:12px;color:var(--fg)}
+.editor-wrap{max-width:900px;margin:0 auto}
+.editor-wrap input, .editor-wrap textarea{width:100%;padding:10px;background:var(--bg3);border:0;color:var(--fg);margin-bottom:10px;border-radius:6px}
+.img-row{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.chat{height:420px;overflow:auto;background:var(--bg3);padding:12px;border-radius:6px}
+.chat .bubble{padding:8px;margin:6px 0;border-radius:6px}
+.chat .bot{background:#111120;color:var(--fg)}
+.chat .user{background:var(--bg3);color:var(--accent2);align-self:flex-end}
+.chat-input{display:flex;gap:8px;margin-top:8px}
+.chat-input input{flex:1;padding:8px;background:var(--bg3);border:0;color:var(--fg);border-radius:6px}
