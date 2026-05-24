@@ -33,3 +33,4 @@ html,body{height:100%;margin:0;background:var(--bg);color:var(--fg)}
 .chat .user{background:var(--bg3);color:var(--accent2);align-self:flex-end}
 .chat-input{display:flex;gap:8px;margin-top:8px}
 .chat-input input{flex:1;padding:8px;background:var(--bg3);border:0;color:var(--fg);border-radius:6px}
+.page-meta{color:var(--fg2);font-size:12px;margin-top:8px}
